@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushant Duggal — Developer & AI Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8438fc020.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="S Duggal" class="nav-logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-solid fa-xmark phone-menu-icon"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa-solid fa-bars phone-menu-icon" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p class="typed-line"><span id="element"></span></p>
+          <h1>
+            Hi, I'm <span>Sushant</span><br />
+            Duggal
+          </h1>
+          <p class="header-sub">
+            BSc Computer Science @ Kirori Mal College, University of Delhi
+          </p>
+          <div class="header-cta">
+            <a href="#portfolio" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+        <!-- Floating tech badges -->
+        <div class="tech-float">
+          <span>Python</span>
+          <span>ML / AI</span>
+          <span>Full-Stack</span>
+          <span>C++</span>
+          <span>NLP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="photo-frame">
+              <img src="images/user.png" alt="Sushant Duggal" />
+              <div class="photo-badge">
+                <i class="fa-solid fa-code"></i>
+                <span>Full-Stack Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I'm a final-year BSc Computer Science student at Kirori Mal
+              College (University of Delhi), passionate about building things
+              that sit at the intersection of <em>software engineering</em> and
+              <em>machine learning</em>. I enjoy crafting clean, performant code
+              — whether it's a geospatial routing engine in Python or a
+              responsive web app in MERN Stack.
+            </p>
+            <p>
+              When I'm not coding, I'm exploring NLP research, contributing to
+              open-source, or trying to squeeze better performance out of
+              algorithms. I believe in learning by building — every project is a
+              chance to go deeper.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Python, C++, JavaScript, SQL
+                </li>
+                <li>
+                  <span>ML & AI</span><br />Scikit-learn, TensorFlow, Keras,
+                  NLP, Word2Vec, NLTK
+                </li>
+                <li>
+                  <span>Web Dev</span><br />HTML, CSS, JavaScript, Bootstrap,
+                  Flask, React, Node.js, Express, MongoDB, RESTful APIs
+                </li>
+                <li>
+                  <span>Tools & CS</span><br />Git/GitHub, DSA, OOP, OS, MySQL,
+                  XAMPP, LaTeX
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan 2024 – Jun 2024</span><br />
+                  Intern (Volunteer) at <strong>PAHAL NGO</strong> — Streamlined
+                  documentation for 6 community projects, conducted digital
+                  literacy workshops for 75+ students, cut report turnaround by
+                  25%.
+                </li>
+                <li>
+                  <span>Aug 2022 – Oct 2022</span><br />
+                  Localisation Data Expert at
+                  <strong>Khan Academy India</strong> — Standardised 5,200+
+                  educational records across 10+ subjects, improved metadata
+                  accuracy to 95%, and contributed to content for 1M+ Indian
+                  learners.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Nov 2022 – Jul 2026</span><br />
+                  BSc Physical Sciences with Computer Science —
+                  <strong>Kirori Mal College, University of Delhi</strong>
+                  <em>(CGPA: 8.00)</em>
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Class XII PCM with CS —
+                  <strong>Kulachi Hansraj Model School</strong> <em>(91%)</em>
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  Class X — <strong>Kulachi Hansraj Model School</strong>
+                  <em>(89.4%)</em>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SERVICES ========== -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">What I Do</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Building responsive, performant web apps using HTML, CSS,
+              JavaScript and Flask. From clean static sites to full-stack apps
+              with RESTful APIs — I make things that work beautifully across
+              every device.
+            </p>
+            <a href="#portfolio">See Projects →</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>ML & AI Engineering</h2>
+            <p>
+              Designing and training machine learning models using Scikit-learn,
+              TensorFlow, and Keras. Specialising in NLP pipelines, sentiment
+              analysis, and data-driven insights from real-world datasets.
+            </p>
+            <a href="#portfolio">See Projects →</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-route"></i>
+            <h2>Algorithm & Data Engineering</h2>
+            <p>
+              Engineering high-performance algorithms for complex problems —
+              geospatial pathfinding, graph analysis, KD-Tree indexing, and
+              large-scale dataset processing with Python and NetworkX.
+            </p>
+            <a href="#portfolio">See Projects →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="subtitle">Certifications</h1>
+        <div class="cert-list">
+          <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <div class="cert-info">
+              <h3>Supervised Machine Learning</h3>
+              <p>Stanford University · Coursera · Sep 2025</p>
+            </div>
+            <a
+              href="https://coursera.org/share/f20beb5f4376cb96245a7cab24d1bfdd"
+              target="_blank"
+              class="cert-link"
+              title="View Credential"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            </a>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <div class="cert-info">
+              <h3>Operating Systems</h3>
+              <p>Google · Coursera · Jul 2025</p>
+            </div>
+            <a
+              href="https://coursera.org/share/2a875311f6d08919b34c47165ff72c9a"
+              target="_blank"
+              class="cert-link"
+              title="View Credential"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            </a>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <div class="cert-info">
+              <h3>The Bits & Bytes of Computer Networking</h3>
+              <p>Google · Coursera · Jul 2025</p>
+            </div>
+            <a
+              href="https://coursera.org/share/0ca883982fe7a9c25badddb8eb639df8"
+              target="_blank"
+              class="cert-link"
+              title="View Credential"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="Geospatial Navigator" />
+            <div class="layer">
+              <h3>Geospatial Navigator</h3>
+              <p>
+                Full-stack A* pathfinding engine for Delhi NCR processing
+                100,000+ nodes from OpenStreetMap. 40% latency reduction over
+                Dijkstra. Flask API + Leaflet.js frontend.
+              </p>
+              <div class="work-tags">
+                <span>Python</span><span>Flask</span><span>Leaflet.js</span>
+              </div>
+              <a
+                href="https://github.com/SD1604/Pathfinder-Pro-Smart-Route-Planner-"
+                title="View Project"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" alt="Friends TV NLP Analysis" />
+            <div class="layer">
+              <h3>Friends TV NLP Analysis</h3>
+              <p>
+                Analysed 22,000+ dialogue lines using Word2Vec & NLTK. Sentiment
+                analysis with 92% precision. Interaction networks visualised
+                across 10 seasons for 8 lead characters.
+              </p>
+              <div class="work-tags">
+                <span>Python</span><span>NLP</span><span>Word2Vec</span>
+              </div>
+              <a href="#" title="View Project"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" alt="Portfolio & Clone Websites" />
+            <div class="layer">
+              <h3>Portfolio & Clone Websites</h3>
+              <p>
+                2 responsive websites built with HTML, CSS, JS, and Bootstrap.
+                100% mobile compatibility verified via Lighthouse audits. Clean
+                Git-tracked deployment.
+              </p>
+              <div class="work-tags">
+                <span>HTML/CSS</span><span>JS</span><span>Bootstrap</span>
+              </div>
+              <a href="#" title="View Project"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/SD1604" target="_blank" class="btn"
+          >More on GitHub <i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- ========== CONTACT ========== -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a href="mailto:sushantduggal24@gmail.com"
+                >sushantduggal24@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone-flip"></i>
+              <a href="tel:+917428638056">+91 7428638056</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              New Delhi, India
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/sushantduggal_/"
+                target="_blank"
+                title="Instagram"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/legend1604"
+                target="_blank"
+                title="X / Twitter"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sushant-duggal-mgamngd7"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+              <a href="https://github.com/SD1604" target="_blank" title="GitHub"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a href="myCV.pdf" download class="btn btn2"
+              ><i class="fa-solid fa-download"></i> Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          © 2025 Sushant Duggal · Built with
+          <i class="fa-solid fa-heart"></i> in New Delhi
+        </p>
+      </div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+      // Tab switching
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (var t of tablinks) t.classList.remove("active-link");
+        for (var c of tabcontents) c.classList.remove("active-tab");
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      // Mobile menu
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      // Contact form → Google Sheet
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx2m-RLdzwf0HQoZGvych1Ssj5FXPI0_iqkL0MT9TC-y3BqvRV2PJnSBjsRb2SLvZBSBg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(() => {
+            msg.innerHTML = "✓ Message sent successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((err) => console.error("Error!", err.message));
+      });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Web Developer.</i>",
+          "<i>ML / AI Engineer.</i>",
+          "<i>Software Engineer.</i>",
+          "<i>Algorithm Enthusiast.</i>",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      // Scroll reveal
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".services-list div, .work, .cert-card")
+        .forEach((el) => {
+          el.classList.add("reveal");
+          observer.observe(el);
+        });
+    </script>
+  </body>
+</html>
